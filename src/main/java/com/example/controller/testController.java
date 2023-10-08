@@ -1,16 +1,18 @@
-package com.example.springbootdemo2.controller;
+package com.example.controller;
 
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.*;
 
 /**
  * @AUTHER XXY
  * @DATE 2023/10/8
  **/
-@RestController
+@Controller
+@RequestMapping("/hello")
 public class testController {
 
-    @RequestMapping("/testController")
+    @GetMapping("/hello")
+    @ResponseBody
     public String test(){
         return "Hello Word testController";
     }
