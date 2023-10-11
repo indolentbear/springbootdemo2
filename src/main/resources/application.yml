@@ -1,0 +1,13 @@
+server:
+  port: 8088
+
+person:
+  name: xxy
+  age: 18
+  gender: male
+  birth: 1996/12/02
+  maps: {k1: v1,k2: v2}
+  lists:
+    - code
+    - music
+    - grils
